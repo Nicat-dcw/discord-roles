@@ -4,6 +4,9 @@ const update = require("./utils/updateMetaData")
 const push = require("./utils/pushMetaData")
 const storage = require("./utils/storage")
 const {blue, bgGreen} = require("colorette")
+const crypto = require("crypto")
+
+
 module.exports = class Client {
     constructor({CLIENT_TOKEN,secret, CLIENT_ID}){
         
@@ -26,7 +29,7 @@ module.exports = class Client {
      this.body = options.body;
 }
     generateCallBack(options = {}){
-        const state = `OMGOMGOMGOMG`;
+        const state = crypto.randomUUID();
 if(!options.callback) throw TypeError("[ERROR] Callback url is required for this method.")
   const url = new URL('https://discord.com/api/oauth2/authorize');
   url.searchParams.set('client_id', this.id);
