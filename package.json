@@ -1,0 +1,26 @@
+{
+  "name": "@nicat.dcw/discord-roles",
+  "version": "0.0.1",
+  "description": "🧃 Light Weight Discord Linked Roles Module with Discord API Interaction",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "build": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "discord api",
+    "linked roles",
+    "discord linked roles",
+    "Nicat.dcw",
+    "Only Cheeini"
+  ],
+  "author": "Nicat.dcw",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "colorette": "^2.0.19",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.7",
+    "npmrc": "^1.1.1"
+  }
+}
