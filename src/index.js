@@ -27,6 +27,7 @@ module.exports = class Client {
         url: this.endpoint
     })
      this.body = options.body;
+     return `Added!`
 }
     generateCallBack(options = {}){
         const state = crypto.randomUUID();
